@@ -1,0 +1,124 @@
+@import url("//fonts.googleapis.com/css?family=Lato:400,400italic");
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url("font/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("font/fontawesome-webfont.woff") format('woff'), url("font/fontawesome-webfont.ttf") format('truetype'), url("font/fontawesome-webfont.svg#FontAwesomeRegular") format('svg');
+}
+
+body {
+	background-color: #EEEEEE;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+}
+
+.calendar {
+	width: 280px;
+	margin: 50px auto 0 auto;
+	height: 300px;
+	background-color: white;
+	box-shadow: 4px 4px 2px #E9E9E9;
+	font-family: FontAwesome monospace;
+}
+
+.head,.month,.line,.week, .year{
+	margin: 0 auto;
+	width: 90%;
+	height: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom: 2px solid #EEEEEE;
+}
+
+.head p {
+	width: 100%;
+	height: 20px;
+	line-height: 30px;
+	color: #999999;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+.month {
+	overflow: hidden;
+	zoom : -1;
+}
+.left {
+	/*下面四行是三角形*/
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent #999999 transparent transparent;
+	display: inline;
+	float: left;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.month p {
+	line-height: 0;
+	padding-top: 0;
+	width: 212px;
+	float: left;
+	text-align: center;
+	color: #999999;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+.right {
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent transparent transparent #999999;
+	display: inline;
+	float: right;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.week, .line, .year{
+	color: #999999;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	line-height: 30px;
+	/*用于去除line-block空格*/
+	font-size: 0;
+	padding-right: 1px;
+}
+.week span {
+	font-size: 16px;
+	width: 36px;
+	margin-left: 5px;
+}
+.line {
+	text-align: left;
+	position: relative;
+}
+.line span{
+	font-size: 16px;
+	margin-left: 20px;
+	margin-right: 6px;
+	position: absolute;
+}
+.Sun {
+	left: 0px;
+}
+.Mon {
+	left: 35px;
+}
+.Tues {
+	left: 70px;
+}
+.Wed {
+	left: 108px;
+}
+.Thur {
+	left: 145px;
+}
+.Fri {
+	left: 180px;
+}
+.Sat {
+	left: 210px;
+}
+.year span {
+	font-size: 16px;
+}
